@@ -37,28 +37,64 @@
 			mso-table-lspace: 0pt;
 			mso-table-rspace: 0pt;
 		}
-       table {
-    border: 1px solid black;   /*временные границы*/
+     /*  table {
+    border: 1px solid rgb(177, 57, 57);   
     border-collapse: collapse;
    }
    tr, td {
-    border: 1px solid black;   /*временные границы*/
+    border: 1px solid black;   
+    border-collapse: collapse;
+   }*/
+   .main-table-850{
+    border: 3px solid #000000;   
     border-collapse: collapse;
    }
-   .heading-text{
-       font-size: 25px; /* нужен больше, но колонка убегает*/               /*  <!-- -->     */
+   .heder-text{
+       font-size: 45px;             /*  <!-- -->     */
    }
    .content-text{
        padding-left: 10px;
        padding-right: 10px;
    }
    p{
-       margin: 3px;
+       margin: 4px;
        font-size: 20px;
+       padding: 4px; ;
    }
    .content-text-heading{
        margin-left: 55px;
+       font-size: 35px;
    }
+   .spiker{
+       padding-left: 280px;
+       font-size: 35px;
+   }
+   .professional{
+       padding: 4px;
+   }
+   .map{
+       text-decoration: none;
+       color: #000000;
+   }
+   .map-text{
+    color: #000000;
+    font-size: 25px;
+    padding-left: 15px;
+   }
+   .address{
+       font-size: 35px;
+    
+   }
+   .link-img{
+    margin-left: 100px;
+    margin-top: 19px;
+    border: 3px solid #000000;/*#dc222f; */ 
+    border-radius:15px 15px 15px 15px;
+}
+.footer-text{
+    font-size: 25px;
+    margin-left: 320px;
+}
 	</style>
 </head>
 
@@ -67,7 +103,7 @@
 	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">                                                    <!-- общее тело , ширина 100%-->         
         <tr>
             <td>
-                 <table class="main table-850" cellpadding="0" cellspacing="0" width="850" align="center"  >           <!-- центральная таблица     !!!-->         
+                 <table class="main-table-850" cellpadding="0" cellspacing="0" width="850" align="center"  >           <!-- центральная таблица     !!!-->         
                      <tr>
                          <td height="30" width="850"></td>                                                              <!--КОЛОНКА шапка 30px --> 
                      </tr>
@@ -75,12 +111,12 @@
                          <td  class="heder-td" bgcolor="#ffffff" >                                                        <!-- КОЛОНКА С ЛОГО И ТЕКСТОМ --> 
                             <table class="table-850" cellpadding="0" cellspacing="0" width="850" align="center">     
                                 <tr>
-                                    <td width="323" class="logo" align="left">                                         <!-- не работает alt --> 
-                                        <img src="https://lh3.googleusercontent.com/__Go2yCPu5Xc7lXzzVURUMAfgfwL6svMNPaPtPROhTZypy2auNXhBvII-8AdIOtDCBFaHaW69oRvJ7oeFa8utKsWuyYuYZBsF-oJi666WTZ78Q591fT1LxbdS84i5SWOcxbE35BZdRlsbwDSZY-ESR9SfroapInQGJtDDlSVKzSskRwTkMAuIyzrPmZXbeXicKbU7cd6uOKlwvBQssQnnfgQ6dESTjC1vQ_aZyvwhm-U-Fge05Sqxt7fW9BGRLDtLkY1lFN3RdpD52d_iC8JNyjza28CrDmHld64M5hOHMZaWB3VdZjJ955G0g5H1LsTg7Ttiw1keHLysxtnIyiZgaPA38ohNQhxQog6TXr1fVQP_SjlN6fJ0a4aEXMgbSjpCkZ9DrTaZJePdwfFUOb3BHr5rzaVZWxKq2Cwui5CBPdjsOfaHL7lWe-5UcKlzv0n7r4sVS7ytP6hrWug3sppwG5-9wUWtBBN23SgXBfrvx3QDfzABWXszH412Gs62PiTPMheHuGD2EYgJCqVUu6GGdfTgrYUpg780DyVbZ-oKxd-obhNwehUiIUPTQhNO_nIqEiOnK-PayVVHgbyX2FocBJTjS6_YwxUHDcUDbNa3Bg4BXt0RHvnA7ssvB5C9G05_K8To5fChe0yBeR0yw1MTYjmfJ0QitjB424C9ssOiOVEml-vwVjNunZMbnsMTivEdaRdMacDtgtYEfyP=w385-h121-no?authuser=0" alt="Логотип"/>
+                                    <td width="323" class="logo" align="left">                                         <!-- подправить низ лого --> 
+                                        <img src="https://lh3.googleusercontent.com/qi5Do_VjLywJcaRgTfyHnkfbQchjhv9g0duI2JfVynXR1Dj9ucX9W2bxPnRxSUFFFgrQF7HRZfkZxVqEOe4gM5rRV2MN9X9OjO_7EgtOwBhUNLVXMM95kKF7gusD0yOfDlA-UirG1tERrL1ig6vrPk2oQNq4Dp1-UD-I2NIts6FMIBFqZklNBb3XGA29lXujJR_vq36TN63LYwcmdQpgNck_JyZPE9--ixy-_N-U_Mub2biZhliwzAr45ztODKflzCacA4AiWB2uzxOrUCVF37ypGyXyRoMONSWXZfcvzoSjBpHRaFyUQW5x3fyy7O9OD8MGlc9lhuEyZEvml7kBgILDNe9G2_fRTJ-m9tZO5ja6tF_jAStyRQKcvDbM3nBE_zK5Vlhz5ng4I0uEiSwatrw8525q6dnTkgDKTgkh6ROmlYnsAcRXQxHcCF34xJoymkjGiDgDQRXLJO9shi-hbXMD_EJi1lq9P3lki8spBgnsJuPzTiJ3r59atBL5aAm9WbxkWR4L7c40K5uvwqicUC2aSUWRrlOidJimWLp6cHvF4CfT_jMIxmnAp8GUAAA8SyjRiYuYX5Y5rpKeu6o43BQYwtXQTLFqAMPR2XoQtqF2kI9q4prYQCqAqX1Bx2O9kjNVeT2LDi3mWTgksccNqbffQhViiLUIvKGunhSNuWCfkkAuf6NvhSPxplFGOIlAUM37O-7yqGSXNdx_=w385-h122-no?authuser=0" alt="Логотип"/>
                                     </td>
-                                    <td width="120"></td>
-                                    <td align="rigth" class="heading-text">
-                                       <p>Делай <br> невозможное</p> 
+                                  <!--    <td width="120"></td>--> 
+                                    <td align="center">
+                                    <strong class="heder-text">Делай <br> <br> невозможное</strong>                                           <!-- шрифт и расположение--> 
                                     </td>          
                                 </tr>
                             </table> 
@@ -88,78 +124,103 @@
                      </tr>
                      <tr>
                          <td class="content-img">
-                             <img src="https://lh3.googleusercontent.com/vxVxpOp-IxAAB0VGMWTUSchfwRSF2xq7KlD8uZheEICSQYEJF7o3YV6795my7Cd72ygogiOTi3N19xI3D_RTEBWmYMEBIKUp9derolUU36hl0p6XBIbpuL77dT8oJy0OPpbH_FKRtIx4hm77nFpAn0KQBWyD-2lXFM8jm_Emot0tfvjh6ykulPwzBKql3FQ0BKNW6lUjMhZqR7-dCFKzsA-aqNMv4gLI2FRl1Hots-IRFhdecr26qpzcdAQ0zV5rN2qKtXCkATLdHUWawE5M1UGBnGziHWWUIsoi4rR4EO73Yl32uqIiHmPhFavxlP3sFbbNcOsbAmT26SMqMMNPyonB0j-Pner52yQvgQdvm1BKM87AhejCBWJHkgmx4lzHawt7WB5-ANhIsGiyfqIDo6gfPSBuJJPqfstRuf6TMIv1vsS78NdiaUB3kY8gMj9JZvk-LP5tkUU0TsnkpKDw0peH6pr5E__UK6L9zCSOYO94flWt5Hgux5emlAnlmalk4GdvU_V6M7XgbJEHFuAeVw_oTzHL-UMIA_gg83jE1-lKaIxEhctps1PXwZErIaurHj1OP-9Nj-DWHMcnEui6ccFIZHon2j-JHAkfhqn5d5-j7MFohzFh83tK8zJTMP5elIk5v5DKowV2CxnPXJ3YQ5Ajh9-z2lrGdDvX_EeO1_1qtkTVYjz-wyM2Rg5hOUK4R8WWW6H9uIzFOR1V=w850-h261-no?authuser=0" alt="Приглашение на семинар"/>
+                             <img src="https://lh3.googleusercontent.com/SXtvdkY8Y1gfiIgYu59N78V79KNVwq7Euhi5B0mMvDN2h6jTBC4aYLZJ8ItKWZMNBdNCf9csYi7E6EBJbBY5tTIqIf-swp2hol4fRD4NEekq-ktb9uk6lRSP5ZQO0HmTKULTMVsYVUWxh_zPN_kSA1KEa43vG290xDVr9V6fGIJEVv358G6cihomy-IMsiCsc6xq2sErsWNey_jS57DkFxIdlMPAd383SbhvJ8eSdvSdcZ5kFbBXXcBHepbZOw2v1zsjYzVd8lDZ3fIFTFbYD8JflW3jF82qzQSlnA8Vf25HhrvoCs_kVa-W7rAF90PghA4NKYstjlNXvvihgXJRYvJFxHEWjvAj9DSdpNIzZSP0tYOIB3C7gFmWCVLdOCpqS7Cos1ZYTKDTOuKBF6fcBoHsBOXGd0aAiLfv3cl6GqvxOijjDGTPJ2Cx8TCQ-Zjn9TwPbKL4QIdGgxPUSYzpiKhIYKYNqFU7-zQEM-eozHIQMoyIEvJnwEjGvaIbekRocq963OKYVmBH40v8zQ1x33PFfS2R5dCWnPjU35DUhbVD7__AhPhinAZOPUasFgj55nWRf8U6WvdCBMumb-14oZfhc9fZ5A1CiLPKW17vs3-sd8_ViD7O_L5cXYrE2hbv0GJHQCskGzntqMlq8eCdS88WU3KJV8GMQO1quSc5uOFqWX-Vq_OIfsHg1xnIlvdJO3zd6WSqykya5kCQ=w850-h261-no?authuser=0" alt="Приглашение на семинар"/>
                          </td>
                          <tr>
                              <td class="content-text">
                                 <strong class="content-text-heading">Уважаемые партнеры!</strong><br>
-                               <p> &nbsp Компания ЦСБ Саратов приглашает Вас принять участие в техническом семинаре. <br></p>
+                               <p>  Компания ЦСБ Саратов приглашает Вас принять участие в техническом семинаре. <br></p>
                                <p> Темы : <br> </p>
-                               <p> &nbsp Технические решения на базе продукции Промрукав. Огнестойкая кабельная линия Промрукав. <br></p>
-                               <p> &nbsp Перечень ключевых изменений СП 484.1311500.2020, вводимого взамен СП5.13130.2009 в части проектирования пожарной сигнализации. <br></p>
-                              <p> &nbsp Системы оповещения Sonar. Новые решения на рынке СОУЭ. Система контроля доступа Rubezh-Strazh. <br></p> 
+                               <p>  Технические решения на базе продукции Промрукав. Огнестойкая кабельная линия Промрукав. <br></p>
+                               <p>  Перечень ключевых изменений СП 484.1311500.2020, вводимого взамен СП5.13130.2009 в части проектирования пожарной сигнализации. <br></p>
+                              <p>  Системы оповещения Sonar. Новые решения на рынке СОУЭ. Система контроля доступа Rubezh-Strazh. <br></p> 
                                
-                               <p> &nbsp Продолжительность семинара до 17-00, в перерыве с 15:00 до 15:30 - кофе-брейк. <br></p>
-                               <p> &nbsp По окончанию семинара всем участникам будут выданы именные сертификаты и сувениры от партнеров. <br></p>
+                               <p>  Продолжительность семинара до 17-00, в перерыве с 15:00 до 15:30 - кофе-брейк. <br></p>
+                               <p>  По окончанию семинара всем участникам будут выданы именные сертификаты и сувениры от партнеров. <br></p>
                              </td>
                          </tr>
                      </tr>
                      <tr>
-                         <td>
-                             <p>Спикеры семинара</p>
+                         <td height="50px">
+                             <p class="spiker" >Спикеры семинара</p>
                          </td>
                      </tr>
                      <tr>
+                          <td>
+                                <table class="body-850" cellpadding="0" cellspacing="0" width="850" align="center">
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <img src="https://lh3.googleusercontent.com/MeRYCFIILeKbtkVcI-19R6kMR9RmP_m-j7ivypw7CTLA3kURUxojx1ZawMaKS7HPN-L70sdt1oeOcdrtm5HdQPvd6KIUAO5bLIa2_4DEqr7CcTlPZtpnHZzO2tssl6WTn66LRf6pALDv8vyyi7Jh4kELCZrMlqtR05lOk921bCelciud_jKZC4SED7b8g2fUS7aYAwjuKJG9hrdF4OPm5Kyhio_UwZRp8-a4gZPSDnMkOho4WxzmU8rA0X5v2J5OhMUd4wdN6J68UbDwwatSNEg4d4E9JjbjZV3Y4u7nijaE--gN_KO583AeDiubjOyQcfB0DzWvo_dJTC_d6tE7GGGxOX_NbEUpSnwXUrR9kA0OrAagSmVrl3mHa3PBGfStu1dXstTgcF-mmctUI0nSabGEtS4IzxQYIp_aI88FPJR-meaI3sB1gSU9DJqGR5q14p4hk3bl2bPfoRlYepeKWp_Nr5AzAfgJBxmzgVGOaO1f5qLKhSt1nte2rOL5FhX4ziqTPa2B9o6GA6r5Ox9G6A9_jeFVoqHYmjZh9VXXvhhmGOV9I-3aADOAjy2dIlCknIOaFiL1sF-32YdMIvZmd3BRi0vtzS_-9kNL70Wr_DAUQ_jx6qQflXJHU_KTeVdkYi7AYhhHRymOW-TEwMqbulvRWpcJ005rTMUnABG4QJ2A1O3IuchCNUHaxMC1hXrCwdwdsRDRFx43QQnY=s200-no?authuser=0" alt="Тихонов Владислав Александрович">
+                                            <p>Тихонов Владислав Александрович</p>
+                                            <p class="professional">Инженер отдела проектных решений тд "Рубеж"</p>             <!--параграфы не на одном уровне-->
+                                        </td>
+                                        <td align="center" valign="top">
+                                            <img src="https://lh3.googleusercontent.com/YMgr6MqVkr7LqkfPGZxzbsNBPOjQjqNys-4vgMoFOetI10cmYYr8TNrK0ZREC3frEuvm6tusMN7pkGZ8ndt5ZaIqPypX-9ImjpUdAc-CsWCIjdRxMSxrBscmQaTrCa-0UrdS1tvVEiB4U-bjH_4_wPlvMfiV87PS9aY87-U1zZ9B28V4ugbJXek_JHZoDWIPGJJhIX3W9o1Jr5NwK6dsgec8odOQzduYWZokh3YDAxVuhYE4MKNQSexmTO8kmnhA1Y6N35jKGJbONEK2DpHpMzuvf2RFy3c2HWpC4T6DoSVFLZfSnn7Kl9aw4871wl3h0kBUZQYTNi2xDT0VJwy-Y85ux6S-N4KBHQLLmTfAF5GK-DxrU9gZDRlK49_s41kZbRh0vkYsaqx5NxM_xWoqa0kmTHUYvTsYClaUM_LYBI6A4azd7YzZ2_U3Rvx2YBM70thOV9UVdLM_ChMXuITmEqL2yb-jHct9yGXWM0Tw2kLK2cj4TJyPtuBCSiKzREGuZa5I_cDBCTxa_EOplI4zkXEuWuisB2ju1j8ByOoj8VTlfpJT8rP2mX3z_4hmgQd8nJ-N942_nyO_KX8G7aNmBHCsC2eZE0aDYj8hdEHM7aXqNwOI_QwXVpu6q-ED9jVHUddVGnbYr-ZA0Tmxtx-7VO4_zm4KThQruToUNyOuu26OfZ-C0tErVCttVBDRnSRtkFtyped2tZ4Z5ExwDA=s200-no?authuser=0" alt="Зотов Антон Николаевич">
+                                            <p>Зотов Антон <br> Николаевич </p>
+                                            <p class="professional">Начальник технической поддержки компании "Sonar"</p>
+                                        </td>
+                                        <td align="center" valign="top">
+                                            <img src="https://lh3.googleusercontent.com/oOs95K4tSyp9p0bXRstk9VosvgdY9JMsud-zM-JDwgJf5xWHmJcSMaMqLZm7sGzw6ajr3LbyQ8qmHnMp9XPc2x2p9-DPQuxCvhzWqfAYq_RfTvkf22mon91kF5Gi5IdjSZAL2AIeB9EsmPZ-IZ_2hnAPTYKFgg7dv2vsJLC8ROu1V_k_I16qWw8F3owFtal_KZG_7Clcq64lToIv4YV7G5BPs-w2lMMIhHIuXnCS2c9HdOdw9LkNnv0bMiMPmDeJPCcFerb1O8qyZRQwCXSUDm10_qId8S9NVX-zjpTh2QOpg5UimPsz0DGVpx_VE4Ahd7miDRbcs2L9S24qKO_DYOERF7jXdDCqARA6ZzVkyG4VQRdwIeWsUeJv4sf-qtind0SwOkkc4f3H4W3py8DzCNQB6DyQf-orwFi1VNbSmzrSRfCsgbyGD7nmh2iawkthITjoS774rSCim-Lc3trvwIFcP6lQFdDa-cpeWj1KuZc7NmDMubbaTvmUttGx-m1SZmIJ0C4BXs9OVRw3pZl41-WaYbBmtwX0rOKuQoJk7QbX9yIeeHgs6VpVhnPmW4t4VNQEWblCCd8De5FwxmtJ3Mv4o1q3ocgLEfeIC6_S39ZmsSBSmBZVx05DSlgEd9bMO7TfzsdE5v0ZeQswchlWA-f4HP1t8CN03tzxswqRI46mXWtSw_Q2sIfd7bEVQZ977tRPfMgari1L57Uc=s200-no?authuser=0" alt="Мирзоян Сергей Георгиеви">
+                                            <p>Мирзоян Сергей <br> Георгиевич  </p>
+                                            <p class="professional">Hачальник отдела продаж компании "Промрукав"</p>
+                                        </td>
+                                    </tr>      
+                             </table>
+                         </td>
+                     </tr>
+
+                     <tr>
                          <td>
-                             <table class="body-850" cellpadding="0" cellspacing="0" width="850" align="center">
+                            <table class="location">
                                 <tr>
-                                    <td align="center">
-                                        <img src="https://lh3.googleusercontent.com/dqDY7nOzdRfsFB2m1HqLbAzH1LCmWUq4rbFJBLH3VFbASrcA1pHMGtzI9ve-G3EyN6BNjD-q2z0npC5ig7dXsmoAO8cPHa9PmHvLy1iiApKpLPl3qYVB20ZUwFJIL1e69U6dW8VvoSE9ToRAGizhjKKo6X2Vemcu1EWCv5xRSsvU7uCsHbZmlHAvzGsWg-fuobFQuWHGjdnlj6XIk36aVT74sVgYgizvBTn1PYHPs_3jQEpXCOigsyPoVp5PeK3Yyz-HjUrDWFGIy_sfjWWj4qhJRlUWAbJbdizIFMij7vOxsngBFDHYgXO2vNRKJNYfk69EVoAdXVt6eR_cmVuZ6PRWuf86SMkrEIanCVQt1ksrp9hwOveQMHhQUJYJ_RleqtH0SFAzRWd8KWw892DwcFq-sVhpdJlvdV5sJgOPa7OFYAQIwWh3kKM0KAPwjilpUM8vNRi0qG_aRAx-7LAuETBQ4aDrGThZchBOqO1q0LNbh1GHOCWH7DIaSt451pAif3Rtyl-sqjMT5EEMQ9UhmCaR0msalu8GW0O2iK1gNZ4KSJylLGrJ5yAb8TMI2j5J5_4VFRucgzaqUcwsvoCyYIXOEr_oqOLi4vrmm_TueNR-Ys5qkkXpPXvZeQgHOWHlA84O-pxFYYyr0ng5Q0-mjnXu3GnU9PXjxs2ABlbJn9XFe_ItCy-QA_ZycK6M_J4wbN6CI-GcaMuejGgA=s200-no?authuser=0" alt="Тихонов Владислав Александрович">
-                                        <p>Тихонов Владислав Александрович</p>
-                                        <p>Инженер отдела проектных решений тд "Рубеж"</p>
-                                    </td>
-                                    <td align="center">
-                                        <img src="https://lh3.googleusercontent.com/ro8tRXlVHtDval3iYI4Ly9UsvrqaFwGmivt6IqZGRbLA1t2Jb_qDbiTTFTZBbbjro4p1d5W52Jbg2rLhubg8inCwHMKrECVcLw5s1QqQ2lGgUqLXVhNIyj15Y0tT_erPvcrGjyF2clGAMtGbVCnm3DgbJI1lc3VKynY-1Z2rrtCCF0r9pAMddBKqIVLXTfxLP2WeoWPcri8lObTIW7hMzU0rjzU8ykfzcKvnw3vvF2OLfVajzD-s5u8JCEhqe_lJumgCye6QwqhBoj3gkEUUx11tKQ8DyBsW1wXxmXEPt9sBhjebzsWcEKmVgLjJ5zNHcV-TSaWRjiYFLyIsaD4E2QTKAKoFijjg4Oun_Vwnwvz0PROMWgm-fTt9G-fnD2dOyMiJelPdH21yD7kAEMB-HISrzwyE0pQaHgd8E8kj6go8TNNaColMAdwRJBPAfM3B5Wl9m0-aI46oDTeibQTXCjDSJZNOZqQKTynadQHCy9OFyhmMikXT81M3852CUu3X-huWg5yjgbgm2beNVXLNZe82xo40MF2vNUOzf6CkAYl1gj_zJnK_-Ra7bzSKItV1E5j8RZRzyZOt2cg7MKpRFGzmd__n_SuyZ8vJpTPRNbOyfxhaJkuY4k3yz4Nvw0w0vA714use2lE7j6u-GqRKNeF7g4Uq_nUPHXVrBbGdn6i2uw0NiZaefyd7nIBktni2QP9T3_FLArBFX3Ry=s200-no?authuser=0" alt="Зотов Антон Николаевич">
-                                        <p>Зотов Антон Николаевич </p>
-                                        <p>Начальник технической поддержки компании "Sonar"</p>
-                                    </td>
-                                    <td align="center">
-                                        <img src="https://lh3.googleusercontent.com/DC4APno2QcQobels7onVX7eiwr9Xi7UyNXAixl7A03R9iMGH_tZWVF2e4dv32SwiwkCOPPMnLWxt5quAoIqi7-6wfKcqmzUM2piiO3pZeXSSQZ-KYodorKbcXeD8OhVYM17_1UeqrtsAtTtc92hFIJ6CmEMhjrYIVBcFtEhC0jKgIVlNWWWVzgW_nXFeJQy_8uFl2Ny1bCoaxvD-M1ntZs7QBqpTLUW1AxWKoZKu03k6nszRAXR4TaOA6aedugBv60geeHhAvll_VCODBJpgJGyyI9ul0OBwbxobRRSIYbmdf3BjY9H8FyRUhm-8TseqIW1YvxRHi1etVuZX6Apg2wE5GE-GB7SeIyFTqdqghXbrEi5DMJU2ofZdmoCc4nKaiTiiHnz7PIvW7f7Z-0_gjUcJhk2Gr1orfvXqx_qqM7GB_FdIacnZ74OU_jVE_et59xWXl9qLRunIzwN8TNtp7Q9c8mAHD5y7RYWwV8uh3JJrb5lH8HqhWOZttt2b2sQpQRJB1ZIdKhlHzAwzKKtIwo4y90mTgPZp-GKs2GUGnr-M6phbdvZal8SllBZ5EmgbsBJ-7M90E3w4A3MTNPObbVGOXw1RFiK3Hk3uTQEaLTCBsUxnm4TjJq0sIA8e97IqBpB13npjm2W_dK7NmJpe4Ti432yGZnyTIi9pG7drQbX61pG6COu4ASbrILfK25CtVXzcSc_oA_xq8epU=s200-no?authuser=0" alt="Мирзоян Сергей Георгиеви">
-                                        <p>Мирзоян Сергей Георгиевич  </p>
-                                        <p>Hачальник отдела продаж компании "Промрукав"</p>
-                                    </td>
-                                </tr>      
-                             </table>
-                         </td>
+                                <td><a class="map" href="https://yandex.ru/maps/-/CCUarNSOpA"><p class="map-text">Нажмите чтобы открыть карту</p><img src="https://lh3.googleusercontent.com/hh1zr6zoIJra0r2N1rhXiIEuQ19TplaNVrqmVGv0K9aFYmKFlak0qVZvqhdRq3D8O8X8c9WLDgQS9fPPi_inMRB-PiI3PHr8kQPSmL3rz0_tIPHOEN8EeUIdQO6WWu6-s0BFYOW9GhgQP49D5cBMGf0jXoZ6xs0IFCJGzw0bSRDSO5J7knouOg3zSaTzmae32EdiVWSgk5ZdPj8QdWOJMIIbdgr1xZipWZy5HaacX8AVRITPkfUnCzlZw-U0mc1O9XIzlZSgFjc59jbHLnQnSr5BqFgNSOAF9joXboV8wV-5RQ58TVVh7lDUugWzIWTxLB0FcJwCf1OcElWfFjplkdVQmqeYIeSBnHsOeRVfGloU-OWkC_OMyZgy76lQWFAmI4P30kNvBJeuZ8-UjhlDeVl_xloJ9MhdtAUsy0DJzf1BvYxEDGs9GvCu9F-5TJCqBxUl2TmTniwGs7w2aWGhzFbC8yqGSEHN8DtvHKZRF2HZTL0Pc4ghACpAR3zIAra93nvkbkxkSYPG3TtRIqa_rQgBLRpGBEDhw1TzbhGPICN66rPavCKsT-LtRkJg1y6vHnAIEekndulSOaU6QWRYS5U4OUiZtpSCK4jvedFh2D-NooDknKVGw0wT3ajzr9btIInJ1jzoVTSQ-HUgtxNkfUi-QSjV_Gx7_Xbl52KgbfEVEiWO3QKSSZOIXOr9x5y9wfaOuKBLtXdxazdzIQ=s390-no?authuser=0" alt="location"></a>  
+                                </td>
+                                <td> 
+                                    <table class="address-text"cellpadding="0" cellspacing="0" width="462" higth="300" align="left">
+                                        <tr>
+                                            <td>
+                                                <p class="address"> &nbsp Семинар состоится 29 июня  2021 г.  в 13:00 по адресу ” г. Саратов, ул. Железнодорожная, 72,  конференц-зал гостиницы  “Богемия”. <br></p>
+                                            </td>
+                                        </tr>
+                                            </td>
+                                    
+                                     
+                                     <!--<td width="462px" width="120" valign="top" >              проблемы с размещением текста -->
+                            </table> 
+                                    <a class="link" href="https://centrsb.ru/"> <img class="link-img" src="https://lh3.googleusercontent.com/vMwAxaYeLbTUTY1mh_0te1c55CaYnzIngqTrERj9IE3llWKPS422MKcid4UA3l2NgFSKW3kOzHasOB5Alg80vPDji3YaMtcauXuShv7TX3kLMbOCzi06Gw8Umk7v69bzeno7M694RJrh9LBbX8YCqei0BfAFyR2LStXow8OV5XM0wg2n3eprJY30w1dAWzJBd0ndMuihyqlbrMIMqcZrM16SiAHPhipoA606KiRZfeWP3IO37BO45hG7T7eM8TE4_Tl1TykhwwNFrwMPyBum4DiviP9KWKad16e00tfd7sJuQhlbrkqYr3x_XZMWF11y0577WPhiPJvJGEY8fsRAs2R4je2pzN46ToH_yj2XDBV8s_-Aq8VrTXhmr2xXw7H8DzF1M5YTwHOPvS9zMztk-SfOfhedTHK5qOk5jRDA-1FZ0Tr56nXSZfKvIuEP_3_5fcNwMsQvI1h14IHSzK5HvzVFSC7E4PeCGfLLIuNsOl5TGaWBP6-hqo8fYTdGm6QV_LD8BaZjtqrxhbtwUtnQ0pQ7RhHKrfpVhNH7E3D8p5_R4XTLbgfwbHm-vfp3l0ITfBInyNFFhfj_UJTQpBeyCMxLQBawZz5i0qb4vlCMdRzYmeCDtHIMdBUpZX2IFEbp3FtjYzGPCGAygfj_zKqbEijF3FhOBMzJdhCQhLmKIjQ9wnQf_kDhyQNCjFae8iSJlfNv8ZSR5Y5SZInrgA=w235-h55-no?authuser=0" alt="buttom"></a>
+                           
+                                </table>       
+                        </td>
                      </tr>
-                     <tr>
-                         <td>
-                             <table class="location">
-                                 <tr>
-                                     <td>
-                                        <img src="https://lh3.googleusercontent.com/CWYX5hAxk6vM4lM6-pJqC6bCnOOzGk0xXpUfcqCmat4COs04jfOCOcpv9Zx-04bvjrUZgkyQQjMoaQk_r1to1FzE0CTITMDyW8WzjR8XPdFwS8_m85FoKq_5jes_jt-U-8cjf579STInqgSX9D6LMhDx3UaC6_PaeneD69n9i_6qcDlrHxl3eEjrAQizYtGBNvAtcJ8pWlqiXntFossMGao_Bc46Tbx4ANgFBTUM3zBVu_HVZAyxUcddVdhK6BobB98ANUt4YowHS-rSIrbB-XM3VkgnAyTBYw373viE4WGub3OqU_-m17U1p7m23-i6PEe3iXPG3O-VeYio1nc0Iy81VykHJRdKq8GQzDqVgd-w9OfljMNjTE4DyqXYbh4c4RgNtEVgSI6U8lZjLmZQeUKdG6tjTA4gf5XuzsfPphydtr59wCjBxoenn_DmGZQxt6jJcXWTy-DlKfoabaqfwn78BCrDi2pR3oQUU3GrT3pI5v4clNMdY3pMO49tIqMPIjQwnSXmoWf5xy_JBcpFZ0aWnEfHbkIJLApPHdgJsfX2Gkdv72j5G9vA-7IUxDX6gXCWvG71AHRnz4uQM-OTDANMbwdsUatoQLWH00jynJ3caHqUHIITNs5sT0S31-PQ2G2HGhNNQXErzafTQHFEqwmtHckDh4f1BbOLPOXQBEfqzbJifClS70MAUftLxKyJMHHlmcaxEp15N6PY=s390-no?authuser=0" alt="location">
-                                     </td>
-                                     <td valign="top" >
-                                    <p> &nbsp Семинар состоится 29 июня 2021 г. <br> в 13:00 по адресу ” г. Саратов, ул. Железнодорожная, 72, <br> конференц-зал гостиницы  “Богемия”. <br></p>
-                                    <a href="https://centrsb.ru/"> <img src="https://lh3.googleusercontent.com/LCOCWojP4Izpjkeu3T0tlNV4ANf450vBeWmoCxA1ZKk6wPKR6cQ8aRgfFOYhkeaYCgsZfapRJK2Jhg-Iq5EgeLx5sCkzzZvYwT23UXUk03fEg3_I45oAGfFuYoNSqJRGq2jWtFJGiizaoWTm0q7KlFyYtDWD_PczZlg2EU68Py30lERwFeuR_bteAsH9jZN0Lq9CIjWt3Y-m34FkRAQE9bt766p903uTfs3sr94r_x08dnQFYGfRTdKa9aOVI_EyUxZlcmwucadpztVyjTgtEepmrTZgKFw60EYE28rxeKXqrTWPAlTUJFKz5PbdtUqlpAl-5npYIvlDmMCrZObpXRsC7Q7HcR7MSli3n6AoVp9MbtOiG4SbKxdhtCxF_nFF_WkdC9FmQbvfVprAFS6baq8aqEpi2o-7tHihFj3DQRGFJU1GQ_n6dBIDb1AzRJHtqChQLtBNxJe7yyHM5pyZknJKP0pr_FPE2IPU31Gw28PGyjWvgL6QOp98OQN854moW2OqSTukhouesQf_PuZuOIoLhIQKHSNcX5ny44ekahq6ifGHBcQPlLcIX6D-jPkGP21s4hfE5Ib1Vp1OR6bF75RwT1-RVkuczDUDpMHipPe4W3voNPqTsdTtAH_HlurGESwUDAuvAYBHeKnPFYi3vEc_i8lTBC4FjKYLAUmVPQsMwkzXJekq74cpqGy6ojynE9n-BDYsfrxYvyb0=w235-h55-no?authuser=0" alt="buttom"></a>
-                                     </td>
-                                 </tr>
-                             </table>
+                        
                          </td>
-                     </tr>
-                     <table class="social network"cellpadding="0" cellspacing="0" width="850" align="center">
-                         <tr>
-                             <td>
-                                 <a href=""><img src="https://lh3.googleusercontent.com/LKUsZ6AashhncrjhnIbJI_ZJqjI6iFNhV_88QIiNuRyatwGNJjdroLaOcdb8Q_Zt7UcT71gd5hk7VKU1wi3luASfFi8uVYw4h6noA3ZK72xEKGyvSaAszjSwJfCIV4GM2jLx38na5ijKqqnyn3YywEFxH-RQCsLFw7WEndmDy9aEEU6QoSM3Qf1JG0l3hQyKV6HOXo9GQTPf2RNG4CC964dz9BThqa48rzEoF_v8EqkXB1hIE3YuKuFPS1fUxy9b9cW0_k-QfiyTZjtYxU7XJTJxB2b1qwUAw7ZwFe7HR0u8JeJq_k0CJ-ZEU4fnRWqnu-P-s1iJBwnv0DXn-vTbqqrrGoyAvfu8SOTYiy67awouoldAO__grx4Jx3u6cjTnW9hSnT8QkskMVYRcCMjBZDC5TjdetazmWQ4hRAQ-pRvWMcK2AbjOpolhhrQXGKwosHFzjyDcsTqEugVmbOuBocJFiqrYKK-EnR91YOugcIaGgOIRO05mFfGncaty--uf5RHk_7DIJryuQFXVvJexTsfVjkVijElorZnPj9gMeX_fpfGOGLf_8y7r4unm7UqWW4vWsCgoIG5gOmtnqbRTRXgfTuw5TyX9gt3TK6AtZDxSBeaYCHTEYB2ErqiOx25M57qaeQiM7dFS19na7I3OXB4DZROpSTyfh5uugS2X-NuVDNGdj26LX0rU8fQN5pqJ1wKI9QKlCP5vc4n0=s50-no?authuser=0" alt="instagram"></a>
-                             </td>
-                             <td>
-                                 <a href=""><img src="https://lh3.googleusercontent.com/OqOTEEQt0a4xPMx6EIGNIZ6dWRRELqaSHyWPlcQroJNsW1Ur5-8lz-2HHqdfQD6M4N2LuPWwF3Y-RM11hWO9WY2q-0IO6Lw62vGd24sj-zidpNkR55Z6IHbKI1YFG_oXAtXlU13HZ73hP0P7syf64hUmwpyEndSE19S5xiw3jIaBWFK4EMz6IObwSSLfKJWUT_uFT3U9e4jDLz-EC3vc49vju1-aMeV0DkmejAMRIcAYfCOJGqpwucBvZMuWs71Dam2cyBBL1eHmGZ_I3lnXG4CY1owAw_Tdx6drse1lQnnff-gEWL7Z_PhPdJQqNM3aWt--ZzhUa1XeK_D43Aef_AxQFT_IwoDyXJzhojdXRUsVDliPqTjOOCHDVmUczeUMOz_uEl6hLxxKbP36COiHdSMmFydEeQZHwlfPwAtNjBCS1AwmB0VrC1hhUXZhA_vZ29xbJQIVdARm-bSH6HEzFhP__qH1txCfAFicg4_Vb-hVKGzWJDs8zdXvYrHtAhkrR9-McajYzLpnSmZlaAela4nC5yyi0OGlGvhnqMiO9vtTq7ynS1t3cWyg1PCH-zTlM3tGC_Qy4gPwluM_PxRWX2DmYubBopQ6KmoC0t6o_qFVt2nVJOsXA-0RRkOhVGQynaI3UJcMMkOZSuPcsfeWV8mp0XVOsb_4jN-PXl8deklSI77mnGuCHbRpx0bD9LjFPmQikflWijmO5ffs=s50-no?authuser=0" alt="vk"></a>
-                             <td>
-                                 <a href=""><img src="" alt=""></a>
-                                 
-                                 </td>
-                             </td>
-                         </tr>
+                     </tr> 
+                        <tr>
+                            <td>
+                                <p class="footer-text" >Связаться с нами</p>
+                            </td>
+                        </tr> 
+                     <table class="body-850" cellpadding="0" cellspacing="0" width="850" align="center">
+                            <tr>
+                                <td align="center" >
+                                    <a title="Позвонить" href="tel:+120345678910"><img src="https://lh3.googleusercontent.com/GH_K0xMeitj6YRpn2wfTkPKu_jKuPGp96qIbRMyUlC2gv8_Nn1MLBXw4DBC9fNMTEY-YrM4RDfpSCcC_eGr8KjC24T9jVKLjSudkDWBj_w33QtTx9nFDQysdo_m4q57O5jJ7LaKDAyQvlFd6GgQtFc9WGhNSvKmj6ihbua9Y7151D_UIEnQmKyIz5JOkd3VSTcgff6k8s9ztHv7l7MmJWb4am7CztcKB5NgeQgQznHJcS1APZFpXhNoSefAkK9GTS9z8JUtyUJCrwIAVKA48wGP7TtvCrmaxiTrv6FSffUoeFqdK8rgs-FHSuj2BnDwHJRFQwWYZ6ZvXfv5IKG-NZ7bdHUg98Rgy8E2zKNML4ID-5Ny9HKOJLRBwkKwJqnABxDcT5sJNQYoExjbqId_L53ImzHCicC_kWLuXZyFjIW6Ywp9t3tKe6JfEe9_pG0h0RHKpq0aoBGwdzwTU_Bfv-juQoP_nfAluQ_MSZB6UzT6UnPJDeeNCjVVVOif6Cg8IJM96KCNw7whNnFMEpCCF7_tAXb9PxAJ1xmsRMj9wvJ94kM2jFvr7jM1nGYQPP-kS7UqMvTeAhr-bJ2i5V_ywUwPec4RS83i8ljD4ZRGyQYRKrgujdhcengmIWarmt4YSlwhd2-E_FDEWckHvV8GSXkeGNoYh6lMRCzVXNQ_0wuwR5Dxa2D81YkHpw7EivjXk0Jz3pqk-T5IDOi5Dnw=s50-no?authuser=0" alt="Call"></a>
+                                </td>
+                                <td align="center" >
+                                    <a href="https://www.instagram.com/csb_saratov/"><img src="https://lh3.googleusercontent.com/LKUsZ6AashhncrjhnIbJI_ZJqjI6iFNhV_88QIiNuRyatwGNJjdroLaOcdb8Q_Zt7UcT71gd5hk7VKU1wi3luASfFi8uVYw4h6noA3ZK72xEKGyvSaAszjSwJfCIV4GM2jLx38na5ijKqqnyn3YywEFxH-RQCsLFw7WEndmDy9aEEU6QoSM3Qf1JG0l3hQyKV6HOXo9GQTPf2RNG4CC964dz9BThqa48rzEoF_v8EqkXB1hIE3YuKuFPS1fUxy9b9cW0_k-QfiyTZjtYxU7XJTJxB2b1qwUAw7ZwFe7HR0u8JeJq_k0CJ-ZEU4fnRWqnu-P-s1iJBwnv0DXn-vTbqqrrGoyAvfu8SOTYiy67awouoldAO__grx4Jx3u6cjTnW9hSnT8QkskMVYRcCMjBZDC5TjdetazmWQ4hRAQ-pRvWMcK2AbjOpolhhrQXGKwosHFzjyDcsTqEugVmbOuBocJFiqrYKK-EnR91YOugcIaGgOIRO05mFfGncaty--uf5RHk_7DIJryuQFXVvJexTsfVjkVijElorZnPj9gMeX_fpfGOGLf_8y7r4unm7UqWW4vWsCgoIG5gOmtnqbRTRXgfTuw5TyX9gt3TK6AtZDxSBeaYCHTEYB2ErqiOx25M57qaeQiM7dFS19na7I3OXB4DZROpSTyfh5uugS2X-NuVDNGdj26LX0rU8fQN5pqJ1wKI9QKlCP5vc4n0=s50-no?authuser=0" alt="instagram"></a>
+                                </td>
+                                <td align="center" >
+                                    <a href="https://vk.com/public42719444"><img src="https://lh3.googleusercontent.com/OqOTEEQt0a4xPMx6EIGNIZ6dWRRELqaSHyWPlcQroJNsW1Ur5-8lz-2HHqdfQD6M4N2LuPWwF3Y-RM11hWO9WY2q-0IO6Lw62vGd24sj-zidpNkR55Z6IHbKI1YFG_oXAtXlU13HZ73hP0P7syf64hUmwpyEndSE19S5xiw3jIaBWFK4EMz6IObwSSLfKJWUT_uFT3U9e4jDLz-EC3vc49vju1-aMeV0DkmejAMRIcAYfCOJGqpwucBvZMuWs71Dam2cyBBL1eHmGZ_I3lnXG4CY1owAw_Tdx6drse1lQnnff-gEWL7Z_PhPdJQqNM3aWt--ZzhUa1XeK_D43Aef_AxQFT_IwoDyXJzhojdXRUsVDliPqTjOOCHDVmUczeUMOz_uEl6hLxxKbP36COiHdSMmFydEeQZHwlfPwAtNjBCS1AwmB0VrC1hhUXZhA_vZ29xbJQIVdARm-bSH6HEzFhP__qH1txCfAFicg4_Vb-hVKGzWJDs8zdXvYrHtAhkrR9-McajYzLpnSmZlaAela4nC5yyi0OGlGvhnqMiO9vtTq7ynS1t3cWyg1PCH-zTlM3tGC_Qy4gPwluM_PxRWX2DmYubBopQ6KmoC0t6o_qFVt2nVJOsXA-0RRkOhVGQynaI3UJcMMkOZSuPcsfeWV8mp0XVOsb_4jN-PXl8deklSI77mnGuCHbRpx0bD9LjFPmQikflWijmO5ffs=s50-no?authuser=0" alt="vk"></a>
+                                </td>
+                                <td align="center" >
+                                        <a title="Viber" href="viber://chat?number=79270000000"><img src="https://lh3.googleusercontent.com/AGwASTKoJzpLWFOi6GAJwW23wYH1xFsj2841PcDHGO7kYEN5vefSS1uVAzFXCdj4742Fhloo-KwhgLStO4SZ_L4886vH2GHdjhuUBPIK2yg2tl9_Wf4XCJ73-FFTnVFI7bOHTFPK7cHdAeDm89AJr4YykqcmmiyqgU6kK16U5aahs85YedgQPS6FsHnR8fxEFpSHAH5NZSh-nNByttt-PVM1t26vD9AdZ9ab-TZA8_1soHjJ7hEvF2d5Dn890er1VFeEOKxQs64UyrLIwpv07IFGJnWEsnhVM6Z90YQjkoFZnWi2Lpm4RS3IC66qhEe5QQOVRg460d9GEGFdVBz3AtJNVHPOPT0r1yp9gAW4E4E3K4fA206Pddq_YOeqdKPls-cmud_lVQmQd2FuEr2PuTAq6OJgEX45XpGWNEOs3N31abr2BLlSo2jxFflVxLcSmvzmrHeQtY9GcIpH8azFbk4DCTTTxIJ6rkN6qXe-dVbdQyQKHhhgVDJj7BVKHiDRjAtyxQIn4m_Q_cKA6rNJchJYcTllJ1QgrClD496k-IysXoXVIDEzU-WPKHHgtTVqQkr4bHKw7yyV3WLHWcRjjZscssNxyaRgIeFND5rrZQUo2Bbk9liWtf_0CxeUY8BEdA1JMgjiUru8nvLfrkakaqj7dI6CpXBi_RzqT7KWDJC2PgunKXwKGhLa7E1Sxrd8P0t9UJERrtf9WNa2=s50-no?authuser=0" alt="Viber"></a>
+                                </td>
+                               </tr> 
+                           </table>
+                            <tr>
+                                <td>
+                                    <p class="foter-text" align="center">Саратов 2021г.</p>
+                                </td>
+                            </tr>
                      </table>
                  </table> 
             </td>
